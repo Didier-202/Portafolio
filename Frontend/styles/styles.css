@@ -22,9 +22,9 @@ Single-file CSS, organized top-down:
 /* ============================================================ 1. VARIABLES */
 :root {
   /* Acento / marca */
-    --accent: #7ee6c8;          /* mint (verde menta) */
+    --accent: #7a167a;          /* mint (verde menta) */
     --accent-soft: #7ee6c822;   /* mint con alpha (22 = ~13% opacidad) */
-    --accent-strong: #2ecfa0;
+    --accent-strong: #380b35;
 
   /* Tema oscuro (por defecto) */
     --bg: #0b0c0e;
@@ -73,9 +73,9 @@ Single-file CSS, organized top-down:
     --text: #141618;
     --text-dim: #55595f;
     --text-mute: #7a7f86;
-    --accent: #17a279;
+    --accent: #7a167a;
     --accent-soft: #17a27922;
-    --accent-strong: #0f7a5a;
+    --accent-strong: #380b35;
     --shadow: 0 20px 50px -25px rgba(10, 20, 30, 0.18);
     --ring: 0 0 0 3px rgba(23, 162, 121, 0.28);
 }
@@ -307,7 +307,7 @@ h4 {
     font-family: var(--font-serif);
     font-weight: 600;
     font-style: italic;
-    color: var(--accent);
+    color: #c026d3;
 }
 
 .eyebrow {
@@ -325,7 +325,7 @@ h4 {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: var(--accent);
+    background: #c026d3;
     box-shadow: 0 0 0 4px var(--accent-soft);
     animation: pulse 2.8s ease-in-out infinite;
 }
@@ -387,7 +387,7 @@ section {
 
 .btn--primary {
     --btn-bg: var(--accent);
-    --btn-fg: #0a0f0d;
+    --btn-fg: #ededed;
     --btn-border: var(--accent);
 }
 .btn--primary:hover {
@@ -535,9 +535,13 @@ section {
     font-weight: 600;
     letter-spacing: -0.01em;
     color: var(--text);
+    
 }
+
+
 .nav__logo-mark {
-    color: var(--accent);
+    color: #c026d3;
+    text-shadow: 0 0 4px #d946ef, 0 0 8px #d946ef;
     display: inline-flex;
     transition: transform var(--t-base) var(--ease);
 }
@@ -576,8 +580,11 @@ section {
 .nav__num {
     font-family: var(--font-mono);
     font-size: 0.72rem;
-    color: var(--accent);
+    color: #c026d3;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
+    
 .nav__link[aria-current="true"] {
     color: var(--text);
     background: var(--bg-elev);
@@ -782,7 +789,7 @@ section {
 .section__num {
     font-family: var(--font-mono);
     font-size: 0.78rem;
-    color: var(--accent);
+    color: #c026d3;
     padding: 0.25rem 0.55rem;
     border: 1px solid var(--border);
     border-radius: 999px;
@@ -983,6 +990,19 @@ section {
     margin-bottom: 1rem;
     border: 1px solid var(--border);
 }
+
+.stack__icon_js {
+    display: inline-grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: var(--bg-elev-2);
+    color: var(--accent);
+    margin-bottom: 1rem;
+    border: 1px solid var(--border);    
+}
+
 .stack__card h3 {
     font-family: var(--font-sans);
     font-size: 1rem;

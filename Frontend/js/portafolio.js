@@ -96,7 +96,7 @@ function initMobileMenu() {
     toggle.addEventListener("click", () => {
         const isOpen = toggle.getAttribute("aria-expanded") === "true";
         setOpen(!isOpen);
-    });
+    }); 
 
     // Cerrar al tocar un link del menú
     menu.addEventListener("click", (e) => {
@@ -118,7 +118,6 @@ function initMobileMenu() {
         if (e.matches) setOpen(false);
     });
 }
-
 
 /* ---------------------------------------------------------- 4. REVEAL ON SCROLL */
 /* IntersectionObserver para elementos con [data-reveal].
