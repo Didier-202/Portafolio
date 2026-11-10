@@ -727,6 +727,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: 0.2rem;
+
 }
 .hero__stats dt {
     font-family: var(--font-mono);
@@ -734,15 +735,18 @@ section {
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--text-mute);
+    
 }
 .hero__stats dd {
     margin: 0;
     font-size: clamp(1.4rem, 2.6vw, 1.9rem);
     color: var(--text);
+
 }
 .hero__stats .num {
     font-size: 1.1em;
     margin-right: 0.1em;
+    
 }
 .hero__stats .plus {
     color: var(--accent);
@@ -1345,10 +1349,14 @@ body.menu-open .mobile-menu {
         padding-block: 4rem 5rem;
     }
 .hero__stats {
+    display: grid;
         grid-template-columns: 1fr 1fr;
+        gap:1rem;
     }
 .hero__stats > div:last-child {
-        grid-column: 1 / -1;
+        grid-column: auto;
+        grid-row:1;
+        text-align: center;
     }
 .hero__scroll {
         display: none;
